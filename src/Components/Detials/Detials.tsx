@@ -41,8 +41,8 @@ export default function Detials() {
                         <img src={data?.data.meals[0].strMealThumb} className='w-full rounded-4xl mb-5' alt="" />
                         <div className='flex justify-center items-center gap-5'>
                             
-                        <a className='text-white bg-red-600 py-2 px-5 rounded-2xl' href={data?.data.meals[0].strYoutube}><i className='fa-brands fa-youtube me-2 align-baseline'></i>you tube</a>
-                        <a className='text-white bg-green-600 py-2 px-5 rounded-2xl' href={data?.data.meals[0].strSource}><i className='fa-solid fa-earth me-2 align-baseline'></i>source</a>
+                        <p onClick={()=>window.open(data?.data.meals[0].strYoutube)} className='text-white cursor-pointer bg-red-600 py-2 px-5 rounded-2xl'><i className='fa-brands fa-youtube me-2 align-baseline'></i>you tube</p>
+                        <p onClick={()=> window.open(data?.data.meals[0].strSource)} className='text-white bg-green-600 py-2 px-5 rounded-2xl'><i className='fa-solid fa-earth me-2 align-baseline'></i>source</p>
                         </div>
                     </div>
                     <div>
